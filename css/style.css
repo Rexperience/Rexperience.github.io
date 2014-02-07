@@ -1,0 +1,112 @@
+html,body{  
+    width:100%;     
+    height:100%;  
+	background-image:url(../images/background.png);
+	}
+
+.navigation {   
+    position:fixed;     
+    z-index:1;      
+    top:20px;  
+}  
+.navigation li {    
+    color:#333333;      
+    display:block;      
+    padding: 0 10px;    
+    line-height:30px;   
+    margin-bottom:2px;      
+    font-weight:bold;   
+    -webkit-transition: all .2s ease-in-out;    
+    border-bottom:1px solid black;      
+    text-align:left;    
+    width:53px;  
+}  
+.navigation li:hover,
+.active {   
+    font-size:25px;     
+    cursor:pointer;     
+    width:100px!important;  
+}
+
+.rexlogo {  
+    position:absolute;
+    top:50%;  
+    left:50%;  
+    width:400px;
+    margin-top:-105px;
+    margin-left:-210px;
+    z-index:1;  
+}
+
+.slide {
+    background-attachment: fixed;
+    width:100%;
+    height:100%;
+    position: relative;
+    box-shadow:inset 0px 10px 10px rgba(0,0,0,0.1);
+}
+
+.button{
+    display:block;
+    width:64px;
+    height:64px;
+    position:absolute;
+    bottom:0px;
+    left:50%;
+    background-image:url(../images/arrow.png);
+    background-repeat:no-repeat;
+}
+.button:hover{
+    background-color: rgba (249,249,249,0.7);
+    cursor:pointer;
+}
+
+/******************************
+ SLIDE 1 
+*******************************/
+#slide1{
+   background-color: rgba (255,255,255,0);
+}
+/******************************
+ SLIDE 2 
+*******************************/
+#slide2{
+    background-color:#33e4bb;
+     
+}
+#slide2 img:first-child{
+    position:absolute;
+top: 700px;
+left: -150px;
+}
+#slide2 img:nth-child(2){
+    position:absolute;
+    top:300px;
+    left:100px;
+}
+
+#buttons{	width:336px;
+			margin:0 auto; 
+			height:62px;
+			position:absolute; 
+			top:50%; left:50%; 
+			margin-left:-168px; 
+			margin-top:75px;}
+		
+a.buttons{	display:block;
+			width:62px; 
+			margin-right:29px; 
+			height:62px; 
+			background-image:url(../images/buttons.png);
+			float:left; 
+			background-position:0px 62px;}
+			
+#facebook{ position:relative; z-index:999999;}
+#twitter{background-position:190px 62px; }
+#gplus{background-position:126px 62px;}
+#github{background-position:62px 62px;  margin-right:0px;}			
+
+#facebook:hover{background-position:0px 0px !important;}
+#twitter:hover{background-position:190px 0px !important;}
+#gplus:hover{background-position: 126px 0px !important;}
+#github:hover{background-position:62px 0px !important;}

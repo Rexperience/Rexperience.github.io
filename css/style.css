@@ -1,6 +1,8 @@
 html,body{  
-    width:100%;     
-    height:100%;  
+	width:100%;     
+	height:100%;
+	background-image:url(../images/background.png);
+	background-repeat:repeat-y;
 	}
 @font-face
 	{
@@ -43,8 +45,7 @@ html,body{
 }
 
 #slide1{
-	background-image:url(../images/bg_slide1.png);
-	background-repeat:no-repeat;
+
 }
 
 #slide2{
@@ -52,8 +53,7 @@ html,body{
 }
 
 #slide3{
-	background-image:url(../images/bg_slide3.png);
-	background-repeat:no-repeat;
+
 }
 
 #text {

@@ -45,7 +45,8 @@ html,body{
 }
 
 #slide1{
-
+	background-image:url(../images/bg_slide1.png);
+	background-repeat:repeat-y;
 }
 
 #slide2{
@@ -53,7 +54,8 @@ html,body{
 }
 
 #slide3{
-
+	background-image:url(../images/bg_slide3.png);
+	background-repeat:repeat-y;
 }
 
 #text {

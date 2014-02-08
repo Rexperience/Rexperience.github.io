@@ -47,7 +47,8 @@ html,body{
 	font-size: 1vm;
 	font-size: 9vmin;
 	width:100%;
-	position:absolute; 
+	position:absolute;
+	top:25%;
 	}
 
 #slide1{

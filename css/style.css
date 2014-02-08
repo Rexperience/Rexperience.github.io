@@ -1,9 +1,8 @@
 html,body{  
 	width:100%;     
 	height:100%;
-	background-image:url(../images/background.png);
-	background-repeat:repeat-y;
-	max-width:100%;
+	max-width:110%;
+	min-width:80%;
 	}
 @font-face
 	{
@@ -44,41 +43,44 @@ html,body{
     background-color: rgba(249,249,249,0.5);
     cursor:pointer;
 }
+#text {	
+	font-size: 1vm;
+	font-size: 9vmin;
+	width:100%;
+	position:absolute; 
+	top:25%;
+	}
 
 #slide1{
+	height:100%;
 	background-image:url(../images/bg_slide1.png);
-	background-repeat:repeat-y;
 }
 
 #slide2{
+	max-height:130%;
+	height:120;
 	background-color:#33e4bb;
 }
 
 #slide3{
+	height:110%;
 	background-image:url(../images/bg_slide3.png);
 	background-repeat:repeat-y;
 }
 
-#text {
-	margin: 0 auto;	
-	}
 h1{	
 	font-family:'RegencieLightObl';
-	font-size:5em;
 	text-align:center;
 	color:#ffffff;
-	top:50% left:50%;
-	padding-top:190px;
 }
 h2{	font-family:'RegencieLightObl';
-	font-size:5em;
 	text-align:center;
 	color:#ffffff;
-	top:50% left:50%;
-	padding-top:280px;
-
+	margin-top:10%;
 }
-#buttons{	width:336px;
+
+
+#buttons{		width:336px;
 			margin:0 auto; 
 			height:62px;
 			position:absolute; 

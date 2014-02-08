@@ -3,6 +3,7 @@ html,body{
 	height:100%;
 	background-image:url(../images/background.png);
 	background-repeat:repeat-y;
+	max-width:100%;
 	}
 @font-face
 	{

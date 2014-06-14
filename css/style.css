@@ -8,6 +8,39 @@ blockquote, q {quotes: none;}
 blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
 table {border-collapse: collapse;border-spacing: 0;}
 
+/* GRID STYLE */
+/*==box model==*/
+*, *:before, *:after {
+-moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+box-sizing: border-box;}
+
+.container {
+margin: 0 auto;
+max-width: 960px;
+width: 90%;}
+
+.column {
+float: left;
+margin-left: 5%;}
+
+.column:first-child {margin-left: 0;}
+.column.full {width: 100%;}
+.column.two-thirds {width: 65%;}
+.column.half {width: 47.5%;}
+.column.one-third {width: 30%;}
+.column.one-fourth {width: 21.25%;}
+
+.row:after {content: ""; display: table; clear: both;}
+
+@media screen and (max-width: 640px) {
+.column.full,
+.column.two-thirds,
+.column.half,
+.column.one-third,
+.column.one-fourth {float: none; margin: 0; width: 100%;}
+}
+/*GRID STYLE*/
 
 /*======Style=====*/
 @font-face
@@ -93,12 +126,12 @@ li{
 
 .profile h1 {
     text-align:center;
-    margin-top:3%;
+    margin-top:2%;
 }
 .profile img{
        margin-top:15%;
-       margin-left:34%;
-       max-width:30%;}
+       padding-left:35%;
+       max-width:100%;}
 
 /*end of "profile" section*/
 /* figure it out how to make it responsive */ 

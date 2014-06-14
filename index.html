@@ -1,59 +1,62 @@
-<!DOCTYPE HTML>
-<html>
-<head>
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>//Redefining Experience.</title>
+        <meta name="description" content="Rexperience Project 2014">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		
+		<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+		
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+		<link rel="stylesheet" href="css/grid.css">
+		<link rel="stylesheet" href="css/pushy-style.css">
+        <link rel="stylesheet" href="css/pushy.css">
+		<link rel="stylesheet" href="css/animate.css">
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="js/jquery-2.1.0.min.js"><\/script>')</script>
+        <script src="js/jquery.stellar.min.js"></script>
+		<script src="js/modernizr.js"></script>
+		<script src="js/animatescroll.js"></script>
+		<script src="js/pushy.min.js"></script>
 
-<meta charset="utf-8">
-<title>//Redefining Experience.</title>
- 
-<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
-<link rel="stylesheet" type="text/css" href="css/style.css">
- 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/js.js"></script>
-<script type="text/javascript" src="js/jquery.stellar.min.js"></script>
-<script type="text/javascript" src="js/waypoints.min.js"></script>
-<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
- 
-</head>
-<body screen_capture_injected="true">
-<a href="http://Rexperience.github.io"><img class="rexlogo" src="rex_logo.png"></a>
+    </head>
+    <body>
+        <!-- Pushy Menu -->
+        <nav class="pushy pushy-left">
+            <ul>
+				<li id="menu">Menu</li>
+                <li><a onclick="$('.home').animatescroll({scrollSpeed:2000,easing:'easeOutBack'});">Home</a></li>
+                <li><a href="https://www.twitter.com/Arqariiq" target="_blank">Twitter</a></li>
+                <li><a href="https://plus.google.com/+AriiqDioF" target="_blank">Google+</a></li>
+				<li><a href="https://github.com/Rexperience" target="_blank">Github</a></li>
+            </ul>
+        </nav>
+        <div class="site-overlay"></div>
+		<!-- Pushy Menu -->
+		
+	<section class="home" data-stellar-background-ratio="0.5">
 
-<div class="slide" id="slide1" data-slide="1" data-stellar-background-ratio="0.5">                        
-	<a class="button" data-slide="2" title=""></a>
-</div>
-<!--End Slide 1-->
-
-<div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">                        
-	<a class="button" data-slide="3" title=""></a>
-<div id="text">
-	<h1>
-	<li>//Rexperience - Redefining experience</li>
-	<li>is an experimental one man project</li>
-	<li>from Ariiq Dio Fathurrachman.<li>
-</h1>
-	</div>
-
-</div>
-<!--End Slide 2-->
-
-
-<div class="slide" id="slide3" data-slide="3" data-stellar-background-ratio="0.5">
-	<div id="text">
-	<h2>//Contact.</h2>
-	</div>
-
-	<a class="button" data-slide="1" title=""></a>    
-
-	<div id="buttons">
-	<a id="facebook" class="buttons animated bounceIn" href="http://www.facebook.com/Arqariiq" target="_blank"></a>
-	<a id="twitter" class="buttons animated2 bounceInLeft" href="http://www.twitter.com/Arqariiq" target="_blank"></a>	
-	<a id="gplus" class="buttons animated2 bounceInLeft2" href="http://plus.google.com/u/0/108971085779506565074" target="_blank"></a>
-	<a id="github" class="buttons animated2 bounceInLeft3" href="http://www.github.com/Rexperience" target="_blank"></a>
-	</div>
-</div>
-<!--End Slide 3-->
-
-
-
-</body>
+        <div id="container">
+			<div class="menu-btn">&#9776;</div>
+		</div>	
+		
+		<div class="logo animated flip"><img src="images/logo-rxp.png" alt="2ndCS Logo" /></div>
+		<a class="button" onclick="$('.profile').animatescroll({scrollSpeed:3000,easing:'easeOutBack'});">&darr;</a>
+	</section>
+	
+	<section class="profile animated fadeInUp" data-stellar-background-ratio="0.7">
+		<div class="container">
+			<div class="row">
+				<div class="column full">
+				<img src="images/untitled.png" alt="Photo Profile" align="center"/>
+				<h1> COMING SOON. </h1>
+				</div>
+			</div>
+		</div>		
+	</section>
+		
+	</body>
 </html>

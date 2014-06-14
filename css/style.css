@@ -1,107 +1,104 @@
-html,body{  
-	width:100%;     
-	height:100%;
-	max-width:110%;
-	min-width:80%;
-	}
+/* ==========================================================================
+ * http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)
+   ========================================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
+html {-webkit-tap-highlight-color:rgba(0,0,0,0);}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+
+
+/*======Style=====*/
 @font-face
 	{
-		font-family:'RegencieLightObl';
-		src: url('../font/RegencieLightObl.ttf') format('truetype');
+		font-family:'Lato';
 	}
 
-.rexlogo {  
-    position:absolute;
-    top:50%;  
-    left:50%;  
-    width:400px;
-    margin-top:-85px;
-    margin-left:-210px;
-    z-index:1;  
+
+html body{
+          font-family:'Lato';
+          width:100%;
+          height:100%;
+          margin: 0 auto;
+          overflow-x:hidden;
+          
+         }
+
+section {
+       position: relative;
+}
+h1 {
+    font-size: 7vmin;
 }
 
-.slide {
-    background-attachment: fixed;
-    width:100%;
-    height:100%;
-    position: relative;
-    box-shadow:inset 0px 10px 10px rgba(0,0,0,0.05);
+}
+a{
+    text-decoration: none;
+}
+
+li{
+   cursor:pointer; 
+}
+
+/*=====Style=====*/
+
+
+.home {
+       text-align:center;
+       height: 100%;
+       background-image:url(../images/bg-test.jpg);
+       background-attachment:fixed;
+       background-position:-25px -150px;
+}
+
+.home img {
+       padding:10%;
+       max-width: 100%;
 }
 
 .button{
-    display:block;
-    width:64px;
-    height:64px;
+    color:#ecf0f1;
+    font-size:3.8vmin;
+    border: 0.3vmin solid;
+    border-radius: 50%;
+    width:40px;
+    height:40px;
     position:absolute;
-    bottom:0px;
+    bottom:15px;
     left:50%;
     margin-left:-32px;
-    background-image:url(../images/arrow.png);
-    background-repeat:no-repeat;
 }
 .button:hover{
-    background-color: rgba(249,249,249,0.5);
     cursor:pointer;
-}
-#text {	
-	font-size: 1vm;
-	font-size: 9vmin;
-	width:100%;
-	position:absolute;
-	top:25%;
-	}
-
-#slide1{
-	height:100%;
-	background-image:url(../images/bg_slide1.png);
+    opacity:0.5;
 }
 
-#slide2{
-	max-height:130%;
-	height:120;
-	background-color:#33e4bb;
+#menu {
+    padding:10%;
+    color:#ecf0f1;
+    background-color:#1abc9c;
+    cursor:none;
+    }
+
+/*end of "home" section*/
+.profile{
+       background-image:url("../images/bg-profile.png");
+       height:100%;
+       background-color:#191919;
+       color:#ecf0f1;
+       position:relative;
+       font-size:4vmin;
 }
 
-#slide3{
-	height:110%;
-	background-image:url(../images/bg_slide3.png);
-	background-repeat:repeat-y;
+.profile h1 {
+    text-align:center;
+    margin-top:3%;
 }
+.profile img{
+       margin-top:15%;
+       margin-left:34%;
+       max-width:30%;}
 
-h1{	
-	font-family:'RegencieLightObl';
-	text-align:center;
-	color:#ffffff;
-}
-h2{	font-family:'RegencieLightObl';
-	text-align:center;
-	color:#ffffff;
-	margin-top:10%;
-}
-
-
-#buttons{		width:336px;
-			margin:0 auto; 
-			height:62px;
-			position:absolute; 
-			top:50%; left:50%; 
-			margin-left:-168px; 
-			margin-top:45px;}
-		
-a.buttons{	display:block;
-			width:62px; 
-			margin-right:29px; 
-			height:62px; 
-			background-image:url(../images/buttons.png);
-			float:left; 
-			background-position:0px 62px;}
-			
-#facebook{ position:relative; z-index:999999;}
-#twitter{background-position:190px 62px; }
-#gplus{background-position:126px 62px;}
-#github{background-position:62px 62px;  margin-right:0px;}			
-
-#facebook:hover{background-position:0px 0px !important;}
-#twitter:hover{background-position:190px 0px !important;}
-#gplus:hover{background-position: 126px 0px !important;}
-#github:hover{background-position:62px 0px !important;}
+/*end of "profile" section*/
+/* figure it out how to make it responsive */ 

@@ -14,13 +14,9 @@ html, body{
 
 /* Lists */
 
-ul{
-    margin: 0;
-    padding: 0;
-}
+ul{ margin: 0; padding: 0;}
 
 /* Container */
-
 #container{
     display:block;
 	position: fixed;
@@ -30,7 +26,6 @@ ul{
 }
 
 /* Menu Button */
-
 .menu-btn{
     font-size:4Vmin;
 	width: 35px;
@@ -70,12 +65,12 @@ ul{
 }
 
 .pushy a:hover{
-    color: #16a085;
-    box-shadow: inset 5px 0 0 0 #16a085;
+    color: #1abc9c;
+    box-shadow: inset 5px 0 0 0 #1abc9c;
+    transition:.5s;
 }
 
 /* Menu Movement */
-
 .pushy-left{
     -webkit-transform: translate3d(-200px,0,0);
     -moz-transform: translate3d(-200px,0,0);
@@ -83,7 +78,6 @@ ul{
     -o-transform: translate3d(-200px,0,0);
     transform: translate3d(-200px,0,0);
 }
-
 .pushy-open{
     -webkit-transform: translate3d(0,0,0);
     -moz-transform: translate3d(0,0,0);
@@ -91,7 +85,6 @@ ul{
     -o-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
 }
-
 .container-push, .push-push{
     -webkit-transform: translate3d(200px,0,0);
     -moz-transform: translate3d(200px,0,0);
@@ -101,7 +94,6 @@ ul{
 }
 
 /* Menu Transitions */
-
 .pushy, #container, .push{
     -webkit-transition: -webkit-transform .2s cubic-bezier(.16, .68, .43, .99);
     -moz-transition: -moz-transform .2s cubic-bezier(.16, .68, .43, .99);

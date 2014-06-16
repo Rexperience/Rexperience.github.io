@@ -99,16 +99,20 @@ li{
     height:40px;
     position:absolute;
     bottom:15px;
-    left:50%;
+    left:50%; right:50%;
     margin-left:-32px;
+    margin-right:-32px;
+    transition:2s;
 }
 .button:hover{
+    transition:2s;
+    border-radius:3%;
     cursor:pointer;
     opacity:0.5;
 }
 
 #menu {
-    padding:10%;
+    padding:7%;
     color:#ecf0f1;
     background-color:#1abc9c;
     cursor:none;
@@ -130,7 +134,8 @@ li{
 }
 .profile img{
        margin-top:15%;
-       padding-left:35%;
+       margin-left:36.5%;
+       margin-right:36.5%;
        max-width:100%;}
 
 /*end of "profile" section*/

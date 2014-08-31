@@ -3,73 +3,6 @@
 * https://github.com/christophery/pushy/
 * by Christopher Yee */
 
-/* Menu Appearance */
-
-/*pushy style*/
-html, body{
-	overflow-x: hidden /* prevents horizontal scroll bars */
-	-webkit-tap-highlight-color: rgba(0,0,0,0); /* disable webkit tap highlight */
-	height: 100%; /* fixes focus scrolling in Safari (OS X) */
-}
-
-/* Lists */
-
-ul{ margin: 0; padding: 0;}
-
-/* Container */
-#container{
-    display:block;
-	position: fixed;
-    margin-top:0%;
-    margin-left:0%;
-    z-index:99;
-}
-
-/* Menu Button */
-.menu-btn{
-    font-size:4Vmin;
-	width: 35px;
-	padding: 10px;
-	margin-bottom: 35px;
-	color: #ecf0f1;
-	text-align: center;
-	cursor: pointer;
-}
-
-.menu-btn:hover{
-    opacity:0.5;
-}
-/*pushy style*/
-.pushy{
-    position: fixed;
-    width: 200px;
-    height: 100%;
-    top: 0;
-    z-index: 9999;
-    background: #2c3e50;
-    font-size: 3.5Vmin;
-    text-align:center;
-    -webkit-box-shadow: inset -7px 0 7px -9px rgba(51, 51, 51, .8);
-    -moz-box-shadow: inset -7px 0 7px -9px rgba(51, 51, 51, .8);
-    box-shadow: inset -7px 0 7px -9px rgba(51, 51, 51, .8);
-    overflow: auto;
-    -webkit-overflow-scrolling: touch; /* enables momentum scrolling in iOS overflow elements */
-}
-
-.pushy a{
-    display: block;
-    color: #1abc9c;
-    padding: 15px 30px;
-    border-bottom: 1px solid #34495e;
-    text-decoration: none;
-}
-
-.pushy a:hover{
-    color: #1abc9c;
-    box-shadow: inset 5px 0 0 0 #1abc9c;
-    transition:.5s;
-}
-
 /* Menu Movement */
 .pushy-left{
     -webkit-transform: translate3d(-200px,0,0);
@@ -95,10 +28,10 @@ ul{ margin: 0; padding: 0;}
 
 /* Menu Transitions */
 .pushy, #container, .push{
-    -webkit-transition: -webkit-transform .2s cubic-bezier(.16, .68, .43, .99);
-    -moz-transition: -moz-transform .2s cubic-bezier(.16, .68, .43, .99);
-    -o-transition: -o-transform .2s cubic-bezier(.16, .68, .43, .99);
-    transition: transform .2s cubic-bezier(.16, .68, .43, .99);
+    -webkit-transition: -webkit-transform 0.3s cubic-bezier(.16, .68, .43, .99);
+    -moz-transition: -moz-transform 0.3s cubic-bezier(.16, .68, .43, .99);
+    -o-transition: -o-transform 0.3s cubic-bezier(.16, .68, .43, .99);
+    transition: transform 0.3s cubic-bezier(.16, .68, .43, .99);
     /* improves performance issues on mobile*/
     -webkit-backface-visibility: hidden;
     -webkit-perspective: 1000;

@@ -6,55 +6,140 @@
         <meta name="description" content="Rexperience Project 2014">
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		
+		<!-- google font -->
 		<link href='http://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
 		
+		<!-- css list -->
         <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/grid.css">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/pushy.css">
+        <link rel="stylesheet" href="css/pushy-style.css">
 		<link rel="stylesheet" href="css/animate.css">
+		<link rel="stylesheet" href="css/jquery.remodal.css">
         
+        <!-- JS list -->
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
 		<script>window.jQuery || document.write('<script src="js/jquery-2.1.0.min.js"><\/script>')</script>
         <script src="js/jquery.stellar.min.js"></script>
 		<script src="js/modernizr.js"></script>
 		<script src="js/animatescroll.js"></script>
 		<script src="js/pushy.min.js"></script>
+		<script src="js/jquery.smooth-scroll.js"></script>
+		<script src="js/script.js"></script>
 
     </head>
     <body>
-        <!-- Pushy Menu -->
+        <!-- Pushy Menu || navigation -->
         <nav class="pushy pushy-left">
             <ul>
 				<li id="menu">Menu</li>
-                <li><a onclick="$('.home').animatescroll({scrollSpeed:2000,easing:'easeOutBack'});">Home</a></li>
+                <li><a onclick="$('.home').animatescroll({scrollSpeed:2500,easing:'easeOutBack'});">Home</a></li>
                 <li><a href="https://www.twitter.com/Arqariiq" target="_blank">Twitter</a></li>
                 <li><a href="https://plus.google.com/+AriiqDioF" target="_blank">Google+</a></li>
 				<li><a href="https://github.com/Rexperience" target="_blank">Github</a></li>
             </ul>
         </nav>
         <div class="site-overlay"></div>
-		<!-- Pushy Menu -->
 		
-	<section class="home" data-stellar-background-ratio="0.5">
-
-        <div id="container">
-			<div class="menu-btn">&#9776;</div>
+	<section class="home" data-stellar-background-ratio="0.4">
+		
+		<div id="container">
+			<div class="menu-btn">
+				&#9776;
+			</div>
 		</div>	
 		
-		<div class="logo animated flip"><img src="images/logo-rxp.png" alt="Rexperience Logo" /></div>
-		<a class="button" onclick="$('.profile').animatescroll({scrollSpeed:3000,easing:'easeOutBack'});">&darr;</a>
+		<div class="logo animated flip">
+			<img src="images/logo-rxp.png" alt="RDFNEXP Logo"/>
+		</div>
+
+		<a class="home-button" onclick="$('.profile').animatescroll({scrollSpeed:2000,easing:'easeInSine'});">&darr;</a>
 	</section>
 	
 	<section class="profile animated fadeInUp" data-stellar-background-ratio="0.7">
 		<div class="container">
-			<div class="row">
+
+			<div class="row ohai">
 				<div class="column full">
-				<img src="images/profile.png" alt="Photo Profile" align="center"/>
-				<h1>COMING SOON</h1>
+					<h1>Ohai there</h1>
+					<h2>Welcome to Rexperience Project</h2>
+					<hr>
+				</div>	
+			</div>	
+
+			<div class="row photo-prof">
+				<div class="column full">
+				<img src="images/new-prof.png" alt="Photo Profile"/>
+				</div>
+			</div>	
+				
+			<div class="row prof-shell">
+				<div class="column full">
+
+					<div class="remodal-bg">
+    				<a href="#modal" class="prof-button">Discover</a>
+    					<div class="remodal" data-remodal-id="modal">
+        				<h1>Discover</h1>
+        				<p>put some lovely description here</p><p>lulz~</p>
+    					</div>
+					</div>
+
 				</div>
 			</div>
 		</div>		
+
 	</section>
+
+	<section class="hidden-one" data-stellar-background-ratio="0.5">
+		<div class="container">
+			<div class="row">
+				<div class="column full">
+					<h1>Expect the unexpected</h1>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="skill">
+		<div class="container">
+			<div class="row what-shell">
+				<div class="column full">
+					<h1>What do I do</h1>
+				</div>	
+			</div>	
+
+			<div class="row tri-icons">
+				<div class="column one-third">
+					<img src="images/code.png" alt="code" />
+					<hr>
+					<h2><em>C</em>ode</h2>
+				</div>
+				<div class="column one-third">
+					<img src="images/design.png" alt="design" />
+					<hr>
+					<h2><em>D</em>esign</h2>
+				</div>
+				<div class="column one-third">
+					<img src="images/repeat.png" alt="repeat" />
+					<hr>
+					<h2><em>R</em>epeat</h2>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="social">
+		<div class="container">
+			<div class="row">
+				<div column full>
+				<h1> UNDER CONSTRUCTION.</h1>
+				</div>
+			</div>	
+		</div>	
+	</section>
+		
+		<script src="js/jquery.remodal.js"></script>
 		
 	</body>
 </html>

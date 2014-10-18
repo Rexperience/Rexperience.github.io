@@ -1,0 +1,48 @@
+/* 320px (iPhone) */
+@media screen and (max-width:320px){
+    
+    .section-padding{padding:30px 0 30px 0 !important;}
+    
+    .home .gap-2m {margin-top:70px !important;}
+    .home .gap-3m {margin-top:100px !important;}
+    
+    .profile h4 {font-size: 5vmin !important;}
+    .profile p {font-size: 4vmin !important;}
+    .profile .gap-1p{padding-top: 30px !important;}
+    
+    .tri-icons img{max-width:100% !important;}
+    .tri-icons h2{letter-spacing: 1px !important;}
+    
+    .whatican{padding-bottom: 30px !important;}
+}
+
+/* 480px (WVGA - Low End Windows Phone) */
+@media screen and (max-width:480px) {
+    
+    .section-padding{padding:60px 0 60px 0;}
+    
+    .home .gap-2m{margin-top:150px;}
+    .home .gap-3m{margin-top:170px;}
+    
+    .profile img{max-width: 45%;}
+    .profile .gap-1p{padding-top: 30px;}
+    
+    
+    .hidden-one, .hidden-two {background-attachment: scroll;}
+    
+    .tri-icons img{max-width:80%;}
+    .tri-icons h2{letter-spacing: 3px;}
+    
+    .whatican{padding-bottom: 60px;}
+}
+
+/* xGA iPad */
+@media screen and (min-width:1024px) {}
+
+/* 1200px (Small Desktop, Netbook) */
+@media screen and (min-width:1280px) {}
+
+/* Bootstrap 990px Breakpoint to 480px */
+@media screen and (min-width:480px) and (max-width:991px) {
+
+}

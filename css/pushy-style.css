@@ -6,8 +6,9 @@ html, body{
 
 /* Menu Appearance */
 #menu
-    {padding:9%;
-     color:#ecf0f1;
+    {padding:10%;
+     color:#333333;
+     text-align:center;
      background-color:#32eabb;
      cursor:none;}
 
@@ -19,7 +20,6 @@ html, body{
      z-index: 9999;
      background: #333333;
      font-size: 3.5Vmin;
-     text-align:center;
 		 text-transform:uppercase; 
      letter-spacing:3px;
      -webkit-box-shadow: inset -7px 0 7px -9px rgba(51, 51, 51, .8);
@@ -38,7 +38,7 @@ html, body{
 .pushy a:hover
     {color: #1abc9c;
      box-shadow: inset 5px 0  0 0 #1abc9c;
-     transition:.4s;}
+     transition:0.5s;}
 
 /* Lists */
 ul{ margin: 0; padding: 0;}
@@ -53,12 +53,11 @@ ul{ margin: 0; padding: 0;}
 
 /* Menu Button */
 .menu-btn
-    {font-size:4Vmin;
+    {font-size:5Vmin;
 	   width: 40px;
-	   padding: 15px;
-	   margin-bottom: 40px;
-	   color: #ecf0f1;
-	   text-align: center;
-	   cursor: pointer;}
+	   margin: 15px auto auto 10px;
+	   color: #32eabb;
+	   cursor: pointer;
+     }
 
-.menu-btn:hover{color:#32eabb;}
+.menu-btn:hover{color:#1abc9c;}

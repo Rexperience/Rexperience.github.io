@@ -1,148 +1,184 @@
+@font-face { font-family:'Lato',sans-serif;}
+
+html body {
+    font-family:'Lato',sans-serif;
+    width : 100%;
+    height: 100%;
+    margin: 0 auto;
+    overflow-x:hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    -o-font-smoothing: antialiased;
+    font-smoothing: antialiased;}
+
+li {cursor:pointer; }
+
+/*GLobal Styles*/
+p { color: word-spacing: 1px; line-height: 25px; font-size: 16px; }
+
+h1 { font-size: 7vmin;}
+h2 { font-size: 6vmin;}
+h3 { font-size: 5vmin;}
+h4 { font-size: 4vmin;}
+h5 { font-size: 3vmin;}
+h6 { font-size: 2vmin;}
+
+.section-padding {padding: 90px 0 90px;}
+
+/* class gap-xy || 'm' for margin & 'p' for padding */
+.gap-1m { margin-top: 130px;}  .gap-1p { padding-top: 130px;}
+.gap-2m { margin-top:  65px;}  .gap-2p { padding-top:  65px;}
+.gap-3m { margin-top:  35px;}  .gap-3p { padding-top:  35px;}
+.gap-4m { margin-top:  13px;}  .gap-4p { padding-top:  13px;}
+
+.hr-light { height:7px; width:72px; background-color: #32eabb; border:0 none;}
+.hr-dark  { height:7px; width:72px; background-color: #333333; border:0 none;}
+
+.wp1, .wp2, .wp3, .wp4, .wp5, .wp6 { visibility: hidden;}
+
+.bounceInLeft, .bounceInRight, 
+.fadeInUp, .fadeInDown, .fadeInLeft, .fadeInRight, .fadeIn { visibility: visible;}
+
+.delay-05  {-webkit-animation-delay: 0.5s; -moz-animation-delay: 0.5s; -o-animation-delay: 0.5s; animation-delay: 0.5s;}
+.delay-10  {-webkit-animation-delay:   1s; -moz-animation-delay:   1s; -o-animation-delay:   1s; animation-delay:   1s;}
+.delay-15  {-webkit-animation-delay: 1.5s; -moz-animation-delay: 1.5s; -o-animation-delay: 1.5s; animation-delay: 1.5s;}
+
+.duration-05  {-webkit-animation-duration: 0.5s; -moz-animation-duration: 0.5s; -o-animation-duration: 0.5s; animation-duration: 0.5s;}
+.duration-10  {-webkit-animation-duration:   1s; -moz-animation-duration:   1s; -o-animation-duration:   1s; animation-duration:   1s;}   
+.duration-15  {-webkit-animation-duration: 1.5s; -moz-animation-duration: 1.5s; -o-animation-duration: 1.5s; animation-duration: 1.5s;}   
+
 /* ==========================================================================
- * http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain)
+ * Home Section
    ========================================================================== */
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
-html {-webkit-tap-highlight-color:rgba(0,0,0,0);}
-ol, ul {list-style: none;}
-blockquote, q {quotes: none;}
-blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}
-table {border-collapse: collapse;border-spacing: 0;}
+.home {
+    height:100%;
+    background-image:url(../images/Header-bg.jpg); no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;}
 
-/*===========================================================================*/
+.home-button {
+    margin: 0 -20px 0 -20px;
+    color: #ecf0f1;
+    font-size: 1.5em;
+    border: 0.3vmin solid;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    transition: 1s;}
 
-@font-face { font-family:'Lato',sans-serif; }
+.home img{max-width:100%;}
 
-html body
-    {font-family:'Lato';
-     width:100%;
-     height:100%;
-     margin: 0 auto;
-     overflow-x:hidden;
-     text-align:center;
-     text-decoration:none;}
+.home-button:hover { transition: 1s; border-radius:5%; cursor: pointer; color: #32eabb;}
 
-section { position: relative; }
-li{ cursor:pointer; }
+/* ==========================================================================
+ * Profile Section
+   ========================================================================== */
+.profile {height:100%; background-color: #191919; color: #ecf0f1;}
 
-.home 
-    {height: 100%;
-     background-image:url(../images/hero-bg.jpg);
-     background-attachment:fixed;
-     background-position:-25px -150px;}
+.ohai { color: #ecf0f1; font-family: sans-serif; text-transform: uppercase;}
+.ohai h1 { font-size: 6.5vmin;}
 
-.home img 
-    {padding:10%;
-     top:auto; left:auto; bottom:auto; right:auto;
-     max-width: 100%;}
+.profile img  { padding-top:8%; max-width:70%;}
+.profile span { color: #32eabb;}
 
-.home-button
-    {margin: 0px -20px 10px -20px;
-     color:#ecf0f1;
-     font-size:1.5em;
-     border: 0.3vmin solid;
-     border-radius: 100%;
-     width:40px;
-     height:40px;
-     position:fixed;
-     bottom:10px;
-     transition:2s;}
+.profile p {font-size: 3vmin;}
 
-.home-button:hover
-    {transition:1s;
-     border-radius:5%;
-     cursor:pointer;
-     color:#32eabb;}
+/* ==========================================================================
+ * Hidden-one
+   ========================================================================== */
+.hidden-one {
+    background: url(../images/hidden_one_bg.jpg); no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ecf0f1;
+    padding: 7% 0 7% 0;}
 
-/*end of "home" section*/
-.profile
-    {min-height:130%;
-     background-color:#191919;
-     color:#ecf0f1;}
+.hidden-one h1 { font-size: 8vmin; text-transform: uppercase; letter-spacing: 5px;}
 
-.ohai{padding-top:5%; color:#ecf0f1; font-family:sans-serif; text-transform: uppercase;}
-.ohai h1{font-size: 6.5vmin;margin-bottom:1%;}
-.ohai h2{font-size:5vmin;}
-.ohai hr{height:7px;width:72px;background-color:#32eabb;margin-top:2%;border:0 none;}
+/* ==========================================================================
+ * Skill Section
+   ========================================================================== */
 
-.profile img
-    {margin-top:7%;
-     top:auto; left:auto; bottom:auto; right:auto;
-     max-width:25%;}
+.skill {background-color:#191919; color: #32eabb;}
 
-.prof-shell{margin-top:10%;}
+.tri-icons img{ max-width:100%;}
 
-.prof-button
-    {display: inline-block;
-     padding: 17.5px 72px;
-     color: #ecf0f1;
-     border: 2px solid;
-     font-size:3vmin;
-     text-decoration: none;
-     text-transform: uppercase;
-     font-weight: bold;
-     letter-spacing: 5px;
-     cursor:pointer;}
+.tri-icons img {
+    -webkit-transition: all 500ms ease-in-out; 
+    -moz-transition: all 500ms ease-in-out; 
+    -o-transition: all 500ms ease-in-out;
+    transition: all 500ms ease-in-out;}
 
-.prof-button:hover
-    {color:#32eabb;
-     transition:ease-in 0.5s;}
+.tri-icons img:hover {
+    -webkit-transform: translate(0, -15px); 
+    -moz-transform: translate(0, -15px);
+    -o-transform:translate(0, -15px);   
+    transform: translate(0, -15px); }
 
-.remodal h1{Color:#32eabb; font-size: 7vmin; text-transform: uppercase;}
+.tri-icons span { color: #32eabb;}
+.tri-icons h2 { color: #ecf0f1; font-weight: bold; text-transform: uppercase; letter-spacing: 7px;}
 
-/*end of "profile" section*/
-.hidden-one
-    {height:40%;
-     background: url(../images/hdn1-bg.jpg); no-repeat center center;
-     -webkit-background-size: cover;
-     -moz-background-size: cover;
-     -o-background-size: cover;
-     background-size: cover;
-     background-attachment: fixed;
-     color: #333333;
-     padding:8% 0 8% 0;}
+.whatican { background-color: #191919; padding-bottom: 90px; text-transform: uppercase;}
+.whatican { color: #ecf0f1;}
+.whatican .progress { background-color: #ecf0f1;}
+.whatican .progress-bar{ background-color: #32eabb;}
 
-.hidden-one h1
-    {font-size: 8vmin; 
-     text-transform: uppercase; 
-     letter-spacing: 5px; }
+/* ==========================================================================
+ * Project Section
+   ========================================================================== */
 
-.skill
-    {min-height: 100%;
-     background-color:#191919;
-     color: #32eabb;
-     padding-top:5%;}
+.project { background-color: #333333;}
+.project h1 { color: #ecf0f1; text-transform: uppercase;}
+.project img { width: 100%;}
+.project-item:hover .mask { opacity:0.90;}
 
-.what-shell{margin:2% auto 7% auto;}
-.what-shell h1{display: inline-block;
-     padding: 17.5px 72px;
-     color: #32eabb;
-     border: 2px solid #ecf0f1;
-     font-size:3vmin;
-     text-transform: uppercase;
-     font-weight: bold;
-    letter-spacing:3px;}
+.mask h5 { color: #32eabb; font-size: 4vmin; text-transform: uppercase;}
+.mask {
+    position:absolute;
+    left:0; top:0;
+    width:100%; height:100%;
+    padding-top:25%;
+    background-color: #333333; 
+    opacity:0;
+    
+    -webkit-transition: opacity .8s ease 0s;
+    -moz-transition: opacity .8s ease 0s;
+    -o-transition: opacity .8s ease 0s;
+    transition: opacity .8s ease 0s;}
 
-.tri-icons img{min-width:50%;}
-.tri-icons img:hover
-    {transition: all 500ms ease-in-out;
-     -webkit-transition: all 500ms ease-in-out; 
-     -moz-transition: all 500ms ease-in-out; 
-     -o-transition: all 500ms ease-in-out;
-     
-     transform: translate(0, -15px); 
-     -webkit-transform: translate(0, -15px); 
-     -ms-transform: translate(0, -15px);}
+.mask:hover {
+    -webkit-transition: opacity .5s ease 0s;
+    -moz-transition: opacity .5s ease 0s;
+    -o-transition: opacity .5s ease 0s;
+    transition: opacity .5s ease 0s;}
 
-.tri-icons hr{width:96px; height:7px; background-color: #333333; margin-top:10%;border:0 none;}
-.tri-icons em{color: #32eabb;}
-.tri-icons h2{color: #ecf0f1; font-size:6vmin; font-weight: bold; text-transform: uppercase; letter-spacing: 5px; margin: 10% 0 10% 0; }
+/* ==========================================================================
+ * Hidden-two
+   ========================================================================== */
 
-/*end of skill section*/
+.hidden-two {
+    background: url(../images/hidden_two_bg.jpg); no-repeat center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    background-attachment:fixed;   
+    color: #ecf0f1;
+    padding:7% 0 7% 0;}
 
-.social
-    {min-height: 100%;
-     background-color: #ecf0f1;
-     padding-top:25%;
-}
-.social h1{font-size: 9vmin;}
-/* figure it out how to make it responsive */ 
+.hidden-two h1 { font-size: 7vmin; text-transform: uppercase; letter-spacing: 0px;}
+
+/* ==========================================================================
+ * Contacts Section
+   ========================================================================== */
+
+.contacts 
+    {color:#191919;
+     height:100%;}

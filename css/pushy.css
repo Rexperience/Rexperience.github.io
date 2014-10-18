@@ -39,9 +39,7 @@
 
 /* Site Overlay */
 
-.site-overlay{
-    display: none;
-}
+.site-overlay { display: none;}
 
 .pushy-active .site-overlay{
     display: block;

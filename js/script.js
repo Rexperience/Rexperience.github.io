@@ -16,28 +16,6 @@ $(document).ready(function() {
     }, {
         offset: '60%'
     });
-    $('.wp3').waypoint(function() {
-        $('.wp3').addClass('animated fadeIn');
-    }, {
-        offset: '70%'
-    });
-    $('.wp4').waypoint(function() {
-        $('.wp4').addClass('animated fadeInUp');
-    }, {
-        offset: '80%'
-    });
-      
-    $('.wp5').waypoint(function() {
-        $('.wp5').addClass('animated fadeInRight');
-    }, {
-        offset: '60%'
-    });    
-
-    $('.wp6').waypoint(function() {
-        $('.wp6').addClass('animated fadeIn');
-    }, {
-        offset: '60%'
-    });    
 });
 
 /***************** Smooth Scrolling ******************/

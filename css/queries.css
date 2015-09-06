@@ -7,13 +7,7 @@
     .home .gap-3m {margin-top:100px !important;}
     
     .profile h4 {font-size: 5vmin !important;}
-    .profile p {font-size: 4vmin !important;}
     .profile .gap-1p{padding-top: 30px !important;}
-    
-    .tri-icons img{max-width:100% !important;}
-    .tri-icons h2{letter-spacing: 1px !important;}
-    
-    .whatican{padding-bottom: 30px !important;}
 }
 
 /* 480px (WVGA - Low End Windows Phone) */
@@ -26,14 +20,6 @@
     
     .profile img{max-width: 45%;}
     .profile .gap-1p{padding-top: 30px;}
-    
-    
-    .hidden-one, .hidden-two {background-attachment: scroll;}
-    
-    .tri-icons img{max-width:80%;}
-    .tri-icons h2{letter-spacing: 3px;}
-    
-    .whatican{padding-bottom: 60px;}
 }
 
 /* xGA iPad */
